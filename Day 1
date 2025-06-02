@@ -1,0 +1,387 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void print1(int n){
+  for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+			cout<<"*";
+			cout<<" ";
+		}
+		cout<<endl;
+	}
+}
+
+void print2(int n){
+  for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+			cout<<"*";
+			cout<<" ";
+		}
+		cout<<endl;
+	}
+}
+
+void print3(int n){
+  for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+			cout<<j+1<<" ";
+		}
+		cout<<endl;
+	}
+}
+
+void print4(int n){
+  for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+			cout<<i+1<<" ";
+		}
+		cout<<endl;
+	}
+}
+
+void print5(int n){
+  for(int i=n;i>0;i--){
+    for(int j=i;j>0;j--){
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+}
+
+void print6(int n){
+  for(int i=n;i>0;i--){
+    for(int j=i;j>0;j--){
+      cout<<i-(j-1)<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void print7(int n){
+  int jj=1;
+  for(int i=1;i<=n;i++){
+    for(int k=0;k<n-i;k++){
+      cout<<" ";
+    }
+    for(int j=0;j<jj;j++){
+      cout<<"*";
+    }
+    for(int k=0;k<n-i;k++){
+      cout<<" ";
+    }
+    cout<<endl;
+    jj+=2;
+  }
+}
+
+void print8(int n){
+  int jj=(2*n)-1;
+  for(int i=n;i>=1;i--){ 
+    if(jj<0)
+      break;
+    for(int k=n-i;k>=1;k--){
+      cout<<" ";
+    }
+    for(int j=jj;j>=1;j--){
+      cout<<"*";
+    }
+    for(int k=n-i;k>=1;k--){
+      cout<<" ";
+    }
+    cout<<endl;
+    jj-=2;
+  }
+}
+
+void print9(int n){
+  int jj=1;
+  for(int i=1;i<=n;i++){
+    
+    for(int k=1;k<=n-i;k++){
+      cout<<" ";
+    }
+    for(int j=1;j<=jj;j++){
+      cout<<"*";
+    }
+    for(int k=1;k<=n-i;k++){
+      cout<<" ";
+    }
+    cout<<endl;
+    jj+=2;
+  }
+  jj=(2*n)-1;
+  for(int i=n;i>=1;i--){
+    if(jj<0)
+      break;
+    for(int k=n-i;k>=1;k--){
+      cout<<" ";
+    }
+    for(int j=jj;j>=1;j--){
+      cout<<"*";
+    }
+    for(int k=n-i;k>=1;k--){
+      cout<<" ";
+    }
+    cout<<endl;
+    jj-=2;
+  }
+}
+
+void print10(int n){
+  for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+      cout<<"*";
+    }
+    cout<<endl;
+  }
+  for(int i=n-1;i>0;i--){
+    for(int j=i;j>0;j--){
+      cout<<"*";
+    }
+    cout<<endl;
+  }
+}
+
+void print11(int n){
+  for(int i=1;i<=n;i++){
+    int ii=i;
+    for(int j=0;j<i;j++){
+      cout<<ii%2;
+      ii++;
+    }
+    cout<<endl;
+  }
+}
+
+void print12(int n){
+  for(int i=1;i<=n;i++){
+    for(int j=1;j<=i;j++){
+      cout<<j;
+    }
+    for(int k=0;k<n-i;k++){
+      cout<<" ";
+    }
+    for(int k=0;k<n-i;k++){
+      cout<<" ";
+    }
+    for(int j=i;j>=1;j--){
+      cout<<j;
+    }
+    cout<<endl;
+  }
+}
+
+void print13(int n){
+  int ii=0;
+  for(int i=1;i<=n;i++){
+    for(int j=1;j<=i;j++){
+      ii++;
+      cout<<ii<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void print14(int n){
+  for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+      char h;
+      h=65+j;
+      cout<<h<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void print15(int n){
+  for(int i=n;i>=1;i--){
+    for(int j=0;j<i;j++){
+      char h;
+      h=65+j;
+      cout<<h<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void print16(int n){
+  for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+      char h;
+      h=65+i;
+      cout<<h<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void print17(int n){
+  for(int i=0;i<n;i++){
+    for(int k=0;k<n-i;k++){
+      cout<<" ";
+    }
+    for(int j=0;j<=i;j++){
+      cout<<char(65+j);
+    }
+    for(int h=i-1;h>=0;h--){
+      cout<<char(65+h);
+    }
+    for(int k=0;k<n-i;k++){
+      cout<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void print18(int n){
+  for(int i=0;i<n;i++){
+    for(int j=i;j>=0;j--){
+      cout<<char((65+n-1)-j);
+    }
+    cout<<endl;
+  }
+}
+
+void print19(int n){
+  for(int i=n;i>0;i--){
+    for(int j=i;j>0;j--){
+      cout<<"*";
+    }
+    for(int j=n-i;j>0;j--){
+      cout<<" ";
+    }
+    for(int j=n-i;j>0;j--){
+      cout<<" ";
+    }
+    for(int j=i;j>0;j--){
+      cout<<"*";
+    }
+    cout<<endl;
+  }
+  for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+      cout<<"*";
+    }
+    for(int j=0;j<n-i-1;j++){
+      cout<<" ";
+    }
+    for(int j=0;j<n-i-1;j++){
+      cout<<" ";
+    }
+    for(int j=0;j<=i;j++){
+      cout<<"*";
+    }
+    cout<<endl;
+  }
+}
+
+void print20(int n){
+  for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+      cout<<"*";
+    }
+    for(int j=0;j<n-i-1;j++){
+      cout<<" ";
+    }
+    for(int j=0;j<n-i-1;j++){
+      cout<<" ";
+    }
+    for(int j=0;j<=i;j++){
+      cout<<"*";
+    }
+    cout<<endl;
+  }
+  for(int i=n-1;i>0;i--){
+    for(int j=i;j>0;j--){
+      cout<<"*";
+    }
+    for(int j=n-i;j>0;j--){
+      cout<<" ";
+    }
+    for(int j=n-i;j>0;j--){
+      cout<<" ";
+    }
+    for(int j=i;j>0;j--){
+      cout<<"*";
+    }
+    cout<<endl;
+  }
+}
+
+void print21(int n){
+  for(int i=0;i<n;i++){
+    for(int j=0;j<n;j++){
+      if(i==0||j==0||i==n-1||j==n-1){
+        cout<<"*";
+      }
+      
+      else{
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+}
+
+void print22(int n){
+  for(int i=0;i<2*n-1;i++){
+    for(int j=0;j<2*n-1;j++){
+      int top=i;
+      int left=j;
+      int right= (2*n-2)-j;
+      int bottom=(2*n-2)-i;
+      int min_dis=min(min(top,left),min(right,bottom));
+      cout<<n-min_dis<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+int main(){
+	int n;
+	cin>>n;
+	print1(n);
+	cout<<endl<<endl;
+	print2(n);
+	cout<<endl<<endl;
+	print3(n);
+	cout<<endl<<endl;
+	print4(n);
+	cout<<endl<<endl;
+	print5(n);
+	cout<<endl<<endl;
+	print6(n);
+	cout<<endl<<endl;
+	print7(n);
+	cout<<endl<<endl;
+	print8(n);
+	cout<<endl<<endl;
+	print9(n);
+	cout<<endl<<endl;
+	print10(n);
+	cout<<endl<<endl;
+	print11(n);
+	cout<<endl<<endl;
+	print12(n);
+	cout<<endl<<endl;
+	print13(n);
+	cout<<endl<<endl;
+	print14(n);
+	cout<<endl<<endl;
+	print15(n);
+	cout<<endl<<endl;
+	print16(n);
+	cout<<endl<<endl;
+	print17(n);
+	cout<<endl<<endl;
+	print18(n);
+	cout<<endl<<endl;
+	print19(n);
+	cout<<endl<<endl;
+	print20(n);
+	cout<<endl<<endl;
+	print21(n);
+	cout<<endl<<endl;
+	print22(n);
+	cout<<endl<<endl;
+}
